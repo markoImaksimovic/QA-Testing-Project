@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Regression" parallel="methods" thread-count="8">
+    <test name="tests">
+        <classes>
+            <class name="tests.LoginWithoutPasswordTest"></class>
+            <class name="tests.LoginWithoutUsernameTest"></class>
+            <class name="tests.LoginWithValidDataTest"></class>
+            <class name="tests.LoginWithWrongDataTest"></class>
+            <class name="loggedInTests.BuyingItemTest"></class>
+            <class name="loggedInTests.LogoutTest"></class>
+            <class name="loggedInTests.RemovingItemFromCartTest"></class>
+            <class name="loggedInTests.CheckingAddingCorrectItemInCartTest"></class>
+        </classes>
+    </test>
+</suite>
